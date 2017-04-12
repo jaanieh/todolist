@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>To-do List</title>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA4PSPwFqNeNTN4eQongoKRcZqT8R3-Qps",
+    authDomain: "todolist-a02ac.firebaseapp.com",
+    databaseURL: "https://todolist-a02ac.firebaseio.com",
+    storageBucket: "todolist-a02ac.appspot.com",
+    messagingSenderId: "78008482789"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+<div id="rubrik">  </div>
+
+<!--<select>
+  <option value="taskNameSort" id="taskNameSort">Sort by taskname</option>
+  <option value="deadLineSort" id="deadLineSort">Sort by deadline</option>
+  <option value="lastAdded" id="lastAddedSort">Sort by last added</option>
+  <option value="completedTasks" id="completedTasks">Show only completed tasks</option>
+  <option value="unCompletedTasks" id="unCompletedTasks">Show only undone tasks</option>
+</select>-->
+
+
+<span class="text">New task:</span>
+<input type="text" id="taskName" placeholder="Enter taskname"/>
+<input type="date" id="taskDeadline" placeholder="Enter deadline"/><button id="addNewTask">Add new task</button>
+
+<table id="headtable">
+<thead>
+  <tr>
+  <th width="300">Task</th>
+     <th>Deadline</th>
+	 <th>Added</th>
+  </tr>
+ </thead>
+</table>
+
+<div id="box">
+<table id="taskTable">
+</table>
+</div>
+
+<button id="taskNameSort">Sort by taskname</button>
+<button id="deadLineSort">Sort by deadline</button>
+<button id="lastAddedSort">Sort by last added</button>
+<input type="text" id="tasksToShow" placeholder="Tasks to show"><button id="tasksToShowButton">OK</button>
+</div>
+
+</body>
+</html>
+
+
+ <!--<input type="checkbox" id="cbox2" value="second_checkbox" checked="checked">
+  <label for="cbox2">This is the second checkbox, which is checked</label>->>

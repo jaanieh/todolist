@@ -1,0 +1,90 @@
+body {
+	background: url("https://img.clipartfest.com/21f7f70e77fdfa17ffcd0a28ee5bf0e0_free-rip-vectors-ripped-paper-clipart-free_1024-771.jpeg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	font-family: verdana;
+	
+	
+}
+
+#rubrik {
+	background-image: url("header.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+
+td {
+	width: 100px;
+	margin: 5px;
+	border-bottom: 1px solid gray;
+	border-collapse: collapse;
+	height: 40px;
+	font-size: 12px;
+	} 
+
+table {
+	margin: auto;
+	margin-top: 20px;
+	width: 550px;
+	text-align: left;
+	color: white;
+	
+}
+
+
+
+th {
+	padding-bottom: 50px;
+	padding-top: 5px;
+	color: black;
+	font-family: verdana;
+	font-weight: normal;
+}
+
+.text {
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+button {
+	background-color: black;
+	color: white;
+	height: 22px;
+	border: none;
+	margin: 5px;
+}
+
+#tasksToShow {
+	width: 85px;
+}
+
+#box {
+	height: 250px;
+	overflow: auto;
+	margin-bottom: 60px;
+}
+
+.container {
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	width: 700px;
+	text-align: center;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
