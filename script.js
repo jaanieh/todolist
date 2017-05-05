@@ -150,14 +150,6 @@ firebase.database().ref('tasks/').orderByChild('added').limitToFirst(tasksToShow
   console.log(snapshot.key);
 });
 
-//console.log("Tasks to show" + tasksToShow);
-
-showCompletedTasks.addEventListener("click", function(event){
-	
-	
-	
-});
-
 });
 
 /********************* HÄMTA FRÅN DATABASEN ***************************/
@@ -182,29 +174,6 @@ firebase.database().ref('tasks/').on('value', function(snapshot){
 	});
 	
 });
-
-
-
-
-//console.log("nyckel utanför knappen: " + child.key);
-
-
-
-
-// Gör ett objekt för varje task
-// låt varje objekt ha ett taskname, en deadline och ett id. 
-// skall deadline vara ett datum? 
-
-
-// sätta id på varje checkbox och kontrollera sedan vid sorteringen om den är checked eller inte?? 
-
-// sortering ligger i slide 10  på sidan 8
-
-// hämta och lägga till saker i databas finns i slide 7 och slide 10 
-
-/* filtrering: googla filterfunktionen. (higher order functions) (ger en ny lista).
-väljer ut vilka som skall behållas. Här kan man välja hur många items man skall visa (limitTofirst(3)) behålller de 3 första resultaten. 
-finns på "filtrering 1" i slide 10 */
 
 //***************** CURRENT TIME FUNCTION ************************/
 
